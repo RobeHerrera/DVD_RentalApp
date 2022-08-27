@@ -17,12 +17,16 @@ from django.contrib import admin
 from django.urls import path, include
 from .router import router
 from . import views
+from api.views import getMovie
 # movie_resource = MovieResource()
 
 urlpatterns = [
     path('', views.home),
     path('admin/', admin.site.urls),
     path('movies/', include('movies.urls')),
-    path('api/',include(router.urls))
+    # path('api/<pk>',getMovie),
+    path('api/v1/movies/', include('movies.urls')),
+    path('api/v1/auth/', include('authentication.urls')),
+    # path('api/',include(router.urls))
     # path('api/', include(movie_resource.urls))
 ]
