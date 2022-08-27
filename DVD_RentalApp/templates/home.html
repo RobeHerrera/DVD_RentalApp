@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Welcome to Emonics</h1>
+<br>
+<p>Simple <b>Restful API</b> for a DVD Rental place</p>
+<br>
+<h4>List of Movies: <a href="{% url 'movies_index' %}">All Movies</a></h4>
+<h4>You can also use its API, click here : <a href="http://127.0.0.1:8000/api/movies/">API</a></h4>
+{% endblock  %}

@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="base.css"> -->
+
+    <title>Emonics</title>
+</head>
+<style>
+    a,
+    a:focus,
+    a:hover {
+        color: rgb(80, 162, 240);
+    }
+    html,
+    body {
+        height: 100%;
+        background-color: #fff;
+    }
+    td{
+        color: aliceblue;
+    }
+    body {
+        color: #fff;
+        text-align: center;
+        text-shadow: 0 1px 3px rgba(225, 249, 253, 0.5);
+    }
+    .site-wrapper {
+        display: table;
+        width: 100%;
+        height: 600px;
+        background-color: #333;
+    }
+    .site-wrapper-inner {
+        display: table-cell;
+        vertical-align: top;
+    }
+    .cover-container {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .inner {
+        padding: 30px;
+    }
+    .masthead-brand {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .masthead-nav>li {
+        display: inline-block;
+    }
+    .masthead-nav>li+li {
+        margin-left: 20px;
+    }
+    .masthead-nav>li>a {
+        padding-right: 0;
+        padding-left: 0;
+        font-size: 16px;
+        font-weight: bold;
+        color: #fff;
+        /* IE8 proofing */
+        color: rgba(255, 255, 255, .75);
+        border-bottom: 2px solid transparent;
+    }
+    .masthead-nav>li>a:hover,
+    .masthead-nav>li>a:focus {
+        background-color: transparent;
+        border-bottom-color: #a9a9a9;
+        border-bottom-color: rgba(255, 255, 255, .25);
+    }
+    .masthead-nav>.active>a,
+    .masthead-nav>.active>a:hover,
+    .masthead-nav>.active>a:focus {
+        color: #fff;
+        border-bottom-color: #fff;
+    }
+    @media (min-width: 768px) {
+        .masthead-brand {
+            float: left;
+        }
+        .masthead-nav {
+            float: right;
+        }
+    }
+    .cover {
+        padding: 0 20px;
+    }
+    .cover .btn-lg {
+        padding: 10px 20px;
+        font-weight: bold;
+    }
+    @media (min-width: 768px) {
+        .masthead {
+            position: fixed;
+            top: 0;
+        }
+        .site-wrapper-inner {
+            vertical-align: middle;
+        }
+    }
+</style>
+
+<body>
+    <div class="site-wrapper">
+
+        <div class="site-wrapper-inner">
+
+            <div class="container">
+
+                <div class="inner cover">
+                    <div class="container">
+                        {% block content %}
+
+                        {% endblock %}
+                    </div>
+
+                    <p class="lead">Code test</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
