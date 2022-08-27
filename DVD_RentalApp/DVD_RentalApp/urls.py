@@ -23,10 +23,6 @@ from api.views import getMovie
 urlpatterns = [
     path('', views.home),
     path('admin/', admin.site.urls),
-    path('movies/', include('movies.urls')),
-    # path('api/<pk>',getMovie),
-    path('api/v1/movies/', include('movies.urls')),
-    path('api/v1/auth/', include('authentication.urls')),
-    # path('api/',include(router.urls))
-    # path('api/', include(movie_resource.urls))
+    path('api/movies/', include('movies.urls')),
+    path('api/auth/', include('authentication.urls')),
 ]

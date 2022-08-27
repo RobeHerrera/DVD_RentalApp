@@ -4,17 +4,7 @@ from django.contrib.auth.models import User
 
 
 class MovieSerializer(serializers.ModelSerializer):  # create class to serializer model
-    # creator = serializers.ReadOnlyField(source='creator.username')
-
     class Meta:
         model = Movie
 
         fields = ('id', 'title', 'release_year', 'number_in_stocks', 'daily_rate','genre')
-
-
-# class UserSerializer(serializers.ModelSerializer):  # create class to serializer user model
-#     movies = serializers.PrimaryKeyRelatedField(many=True, queryset=Movie.objects.all())
-
-#     class Meta:
-#         model = User
-#         fields = ('id', 'username', 'movies')

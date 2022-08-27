@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "6f47080d-8d30-40cb-8c8e-1117e2c01550",
+		"_postman_id": "f28eea7b-5fa7-4fe8-b3e8-c0a799fd17ce",
 		"name": "Emonics",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "1334468"
@@ -50,18 +50,11 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/v1/movies/1",
-					"protocol": "http",
+					"raw": "{{BASE_URL}}/movies/1",
 					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
+						"{{BASE_URL}}"
 					],
-					"port": "8000",
 					"path": [
-						"api",
-						"v1",
 						"movies",
 						"1"
 					]
@@ -197,18 +190,11 @@
 					]
 				},
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/v1/auth/register/",
-					"protocol": "http",
+					"raw": "{{BASE_URL}}/auth/register/",
 					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
+						"{{BASE_URL}}"
 					],
-					"port": "8000",
 					"path": [
-						"api",
-						"v1",
 						"auth",
 						"register",
 						""
@@ -374,7 +360,7 @@
 			"response": []
 		},
 		{
-			"name": "partialUpdateMovie Copy",
+			"name": "deleteMovie",
 			"request": {
 				"auth": {
 					"type": "bearer",
