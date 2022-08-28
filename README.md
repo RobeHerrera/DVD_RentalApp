@@ -1,7 +1,13 @@
 # DVD_RentalApp
 Example using Dockerf, Django and SQL DataBase
 
-## Instructions
+### Instructions for Docker (tested on WSL)
+1. Install Docker Engine from the following page instructions: `https://docs.docker.com/engine/install/ubuntu/`
+2. Install Docker Compose `pip install docker-compose`
+3. Run `docker compose up`
+4. go `http://127.0.0.1:8000/` and should be up and running
+
+## Instructions for using a virtual environment (Windows and WSL)
 1. Create virtual environment `python3 -m venv myenv`
 2. Activate it `source myenv/bin/activate` or windows CDM `.\myenv\Scripts\activate.bat` or PS `.\myenv\Scripts\Activate.ps1` 
 3. `python -m pip install -r requirements.txt`
@@ -87,12 +93,6 @@ http DELETE http://127.0.0.1:8000/api/movies/{movie_id}/ "Authorization: Bearer 
 Tested on :
 - WSL
 - Windows
-
-### Instructions for Docker (tested on WSL)
-1. Install Docker Engine from the following page instructions: `https://docs.docker.com/engine/install/ubuntu/`
-2. Install Docker Compose `pip install docker-compose`
-3. docker-compose up
-4. go `http://127.0.0.1:8000/` and should be up and running
 
 
 ### TODO:

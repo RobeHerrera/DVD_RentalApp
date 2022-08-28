@@ -5,6 +5,15 @@ from .serializers import RegisterSerializer
 
 
 class RegisterView(generics.CreateAPIView):
+    """
+    View to render the list of all the movies.
+
+    Args:
+      request: requst from http url.
+
+    Returns:
+      render of  movies/index.
+    """
     queryset = User.objects.all()
     permission_classes = (AllowAny,)
     serializer_class = RegisterSerializer

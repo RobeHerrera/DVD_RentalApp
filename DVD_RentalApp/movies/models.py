@@ -3,6 +3,9 @@ from django.utils import timezone
 
 
 class Genre(models.Model):
+    """
+    Describe the model of Genre use for the Data Base
+    """
     name = models.CharField(max_length=255)
 
     def __str__(self):
@@ -10,6 +13,9 @@ class Genre(models.Model):
 
 
 class Movie(models.Model):
+    """ 
+    Describe the model of Movie use for the Data Base
+    """
     title = models.CharField(max_length=255)
     release_year = models.IntegerField()
     number_in_stocks = models.IntegerField()

@@ -2,8 +2,10 @@ from django_filters import rest_framework as filters
 from .models import Movie
 
 
-# We create filters for each field we want to be able to filter on
 class MovieFilter(filters.FilterSet):
+    """
+    We create filters for each field we want to be able to filter on
+    """
     title = filters.CharFilter(lookup_expr='icontains')
     genre = filters.CharFilter(lookup_expr='icontains')
     year = filters.NumberFilter()

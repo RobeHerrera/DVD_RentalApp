@@ -15,10 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from .router import router
 from . import views
-from api.views import getMovie
-# movie_resource = MovieResource()
+
+
+"""
+End points for the app DVD Rental
+"""
 
 urlpatterns = [
     path('', views.home),

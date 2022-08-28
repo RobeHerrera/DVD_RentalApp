@@ -2,6 +2,12 @@ from django.contrib import admin
 from .models import Genre, Movie
 
 
+"""
+To show in admin page
+
+TODO: 
+    - Add all the tables in the DB of DVD Rental
+"""
 class GenreAdmin(admin.ModelAdmin):
     list_display = ('id', 'name')
 
