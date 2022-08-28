@@ -5,7 +5,7 @@ CREATE TABLE IF NOT EXISTS [actor] (
 [last_update] VARCHAR
 );
 
-INSERT INTO actor VALUES
+INSERT INTO movies_actor VALUES
 (1,'Penelope','Guiness','2013-05-26T14:47:57.62'),
 (2,'Nick','Wahlberg','2013-05-26T14:47:57.62'),
 (3,'Ed','Chase','2013-05-26T14:47:57.62'),

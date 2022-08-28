@@ -4,7 +4,7 @@ CREATE TABLE IF NOT EXISTS [language] (
 [last_update] VARCHAR
 );
 
-INSERT INTO language VALUES
+INSERT INTO movies_language VALUES
 (1,'English             ','2006-02-15T10:02:19'),
 (2,'Italian             ','2006-02-15T10:02:19'),
 (3,'Japanese            ','2006-02-15T10:02:19'),

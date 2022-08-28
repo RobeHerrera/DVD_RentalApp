@@ -5,6 +5,6 @@ CREATE TABLE IF NOT EXISTS [store] (
 [last_update] VARCHAR
 );
 
-INSERT INTO store VALUES
+INSERT INTO movies_store VALUES
 (1,1,1,'2006-02-15T09:57:12'),
 (2,2,2,'2006-02-15T09:57:12');

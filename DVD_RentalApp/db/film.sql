@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS [film] (
 [fulltext] VARCHAR
 );
 
-INSERT INTO film VALUES
+INSERT INTO movies_film VALUES
 (133,'Chamber Italian','A Fateful Reflection of a Moose And a Husband who must Overcome a Monkey in Nigeria',2006,1,7,4.99,117,14.99,'NC-17','2013-05-26T14:50:58.951',"Trailers",'''chamber'':1 ''fate'':4 ''husband'':11 ''italian'':2 ''monkey'':16 ''moos'':8 ''must'':13 ''nigeria'':18 ''overcom'':14 ''reflect'':5'),
 (384,'Grosse Wonderful','A Epic Drama of a Cat And a Explorer who must Redeem a Moose in Australia',2006,1,5,4.99,49,19.99,'R','2013-05-26T14:50:58.951',"Behind the Scenes",'''australia'':18 ''cat'':8 ''drama'':5 ''epic'':4 ''explor'':11 ''gross'':1 ''moos'':16 ''must'':13 ''redeem'':14 ''wonder'':2'),
 (8,'Airport Pollock','A Epic Tale of a Moose And a Girl who must Confront a Monkey in Ancient India',2006,1,6,4.99,54,15.99,'R','2013-05-26T14:50:58.951',"Trailers",'''airport'':1 ''ancient'':18 ''confront'':14 ''epic'':4 ''girl'':11 ''india'':19 ''monkey'':16 ''moos'':8 ''must'':13 ''pollock'':2 ''tale'':5'),

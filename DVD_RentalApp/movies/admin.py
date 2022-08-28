@@ -1,5 +1,8 @@
 from django.contrib import admin
-from .models import Genre, Movie
+from .models import (
+    Genre, Movie, Actor, Address, Category, City, Country, Customer,
+    FilmCategory, Film, Inventory, Language, Payment, Rental, Staff, Store
+    )
 
 
 """
@@ -11,11 +14,75 @@ TODO:
 class GenreAdmin(admin.ModelAdmin):
     list_display = ('id', 'name')
 
-
 class MovieAdmin(admin.ModelAdmin):
     exclude = ('date_created', )
     list_display = ('id', 'title', 'number_in_stocks', 'daily_rate', 'genre')
 
+class ActorAdmin(admin.ModelAdmin):
+    list_display = ('id', 'first_name', 'last_name', 'last_update')
+
+class AddressAdmin(admin.ModelAdmin):
+    list_display = ('id', 'address', 'address2', 'district'
+    ,'city_id','postal_code','phone','last_update')
+
+@admin.register(Category)
+class CategoryAdmin(admin.ModelAdmin):
+    list_display = ('id', 'name', 'last_update')
+
+@admin.register(City)
+class CityAdmin(admin.ModelAdmin):
+    list_display = ('id', 'city', 'country_id', 'last_update')
+
+@admin.register(Country)
+class CountryAdmin(admin.ModelAdmin):
+    list_display = ('id', 'country', 'last_update')
+
+@admin.register(Customer)
+class CustomerAdmin(admin.ModelAdmin):
+    exclude = ('active',)
+    list_display = ('id', 'store_id', 'first_name','last_name', 
+    'email','address_id','activebool','create_date','last_update')
+
+@admin.register(FilmCategory)
+class FilmCategoryAdmin(admin.ModelAdmin):
+    list_display = ('id', 'film_id', 'last_update')
+
+@admin.register(Film)
+class FilmAdmin(admin.ModelAdmin):
+    list_display = ('id', 'title', 'description','release_year','language_id',
+    'rental_duration','rental_rate','length','replacement_cost','rating',
+    'last_update','special_features','fulltext')
+
+@admin.register(Inventory)
+class InventoryAdmin(admin.ModelAdmin):
+    list_display = ('id', 'film_id', 'store_id','last_update')
+
+@admin.register(Language)
+class LanguageAdmin(admin.ModelAdmin):
+    list_display = ('id', 'name', 'last_update')
+
+@admin.register(Payment)
+class PaymentAdmin(admin.ModelAdmin):
+    list_display = ('id', 'customer_id', 'staff_id','rental_id','amount',
+    'payment_date')
+
+@admin.register(Rental)
+class RentalAdmin(admin.ModelAdmin):
+    list_display = ('id', 'rental_date', 'inventory_id','customer_id','return_date',
+    'staff_id', 'last_update')
+
+@admin.register(Staff)
+class StaffAdmin(admin.ModelAdmin):
+    exclude = ('picture', )
+    list_display = ('id', 'first_name', 'last_name','address_id','email',
+    'store_id','active','username','password','last_update')
+
+@admin.register(Store)
+class StoreAdmin(admin.ModelAdmin):
+    exclude = ('picture', )
+    list_display = ('id', 'manager_staff_id', 'address_id', 'last_update')
 
 admin.site.register(Genre, GenreAdmin)
 admin.site.register(Movie, MovieAdmin)
+admin.site.register(Actor, ActorAdmin)
+admin.site.register(Address, AddressAdmin)

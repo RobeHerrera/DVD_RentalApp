@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS [customer] (
 [active] INT
 );
 
-INSERT INTO customer VALUES
+INSERT INTO movies_customer VALUES
 (524,1,'Jared','Ely','jared.ely@sakilacustomer.org',530,true,'2006-02-14','2013-05-26T14:49:45.738',1),
 (1,1,'Mary','Smith','mary.smith@sakilacustomer.org',5,true,'2006-02-14','2013-05-26T14:49:45.738',1),
 (2,1,'Patricia','Johnson','patricia.johnson@sakilacustomer.org',6,true,'2006-02-14','2013-05-26T14:49:45.738',1),

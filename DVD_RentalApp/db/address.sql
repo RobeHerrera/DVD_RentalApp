@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS [address] (
 [last_update] VARCHAR
 );
 
-INSERT INTO address VALUES
+INSERT INTO movies_address VALUES
 (1,'47 MySakila Drive',NULL,'Alberta',300,'','','2006-02-15T09:45:30'),
 (2,'28 MySQL Boulevard',NULL,'QLD',576,'','','2006-02-15T09:45:30'),
 (3,'23 Workhaven Lane',NULL,'Alberta',300,'','14033335568','2006-02-15T09:45:30'),

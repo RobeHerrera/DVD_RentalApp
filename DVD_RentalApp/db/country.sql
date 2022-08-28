@@ -4,7 +4,7 @@ CREATE TABLE IF NOT EXISTS [country] (
 [last_update] VARCHAR
 );
 
-INSERT INTO country VALUES
+INSERT INTO movies_country VALUES
 (1,'Afghanistan','2006-02-15T09:44:00'),
 (2,'Algeria','2006-02-15T09:44:00'),
 (3,'American Samoa','2006-02-15T09:44:00'),

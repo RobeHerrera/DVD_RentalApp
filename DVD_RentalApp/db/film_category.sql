@@ -4,7 +4,7 @@ CREATE TABLE IF NOT EXISTS [film_category] (
 [last_update] VARCHAR
 );
 
-INSERT INTO film_category VALUES
+INSERT INTO movies_film_category VALUES
 (1,6,'2006-02-15T10:07:09'),
 (2,11,'2006-02-15T10:07:09'),
 (3,6,'2006-02-15T10:07:09'),

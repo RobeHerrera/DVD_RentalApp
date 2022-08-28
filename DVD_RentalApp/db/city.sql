@@ -5,7 +5,7 @@ CREATE TABLE IF NOT EXISTS [city] (
 [last_update] VARCHAR
 );
 
-INSERT INTO city VALUES
+INSERT INTO movies_city VALUES
 (1,'A Corua (La Corua)',87,'2006-02-15T09:45:25'),
 (2,'Abha',82,'2006-02-15T09:45:25'),
 (3,'Abu Dhabi',101,'2006-02-15T09:45:25'),

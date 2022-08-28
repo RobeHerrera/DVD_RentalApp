@@ -5,7 +5,7 @@ CREATE TABLE IF NOT EXISTS [inventory] (
 [last_update] VARCHAR
 );
 
-INSERT INTO inventory VALUES
+INSERT INTO movies_inventory VALUES
 (1,1,1,'2006-02-15T10:09:17'),
 (2,1,1,'2006-02-15T10:09:17'),
 (3,1,1,'2006-02-15T10:09:17'),
