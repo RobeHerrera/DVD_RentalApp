@@ -89,6 +89,10 @@ Delete a movie
 http DELETE http://127.0.0.1:8000/api/movies/{movie_id}/ "Authorization: Bearer {YOUR_TOKEN}"
 ```
 
+
+## Unit test
+- run the command: `python manage.py test`
+
 ## Test Enviroments
 Tested on :
 - WSL

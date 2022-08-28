@@ -41,7 +41,7 @@ class MovieTests(TestCase):
         self.assertEqual(self.movie.date_created, "2022-10-10")
 
     def test_list_url(self):
-        response = self.client.get("/api/movies/list/")
+        response = self.client.get("/movies/list/")
         self.assertEqual(response.status_code, 200)
 
 
