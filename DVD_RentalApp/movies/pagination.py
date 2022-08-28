@@ -1,9 +1,0 @@
-from rest_framework.pagination import PageNumberPagination
-
-
-class CustomPagination(PageNumberPagination):
-    """
-    Create pagination when is retrieve the information
-    """
-    page_size = 10
-    page_size_query_param = 'page_size'

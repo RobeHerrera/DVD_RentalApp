@@ -25,6 +25,7 @@ End points for the app DVD Rental
 urlpatterns = [
     path('', views.home),
     path('admin/', admin.site.urls),
-    path('api/movies/', include('movies.urls')),
+    path('movies/', include('movies.urls')),
+    path('api/', include('api.urls')),
     path('api/auth/', include('authentication.urls')),
 ]

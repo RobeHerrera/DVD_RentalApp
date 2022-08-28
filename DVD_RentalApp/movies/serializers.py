@@ -1,12 +1,9 @@
+# from django.contrib.auth import get_user_model
 from rest_framework import serializers
 from .models import Movie
 
-
-class MovieSerializer(serializers.ModelSerializer):  # create class to serializer model
-    """
-    Serializer for rest framework
-    """
+class MovieSerializer(serializers.ModelSerializer):
     class Meta:
         model = Movie
+        fields = '__all__'
 
-        fields = ('id', 'title', 'release_year', 'number_in_stocks', 'daily_rate','genre')

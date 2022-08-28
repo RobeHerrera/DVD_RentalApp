@@ -50,13 +50,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{BASE_URL}}/movies/1",
+					"raw": "{{BASE_URL}}/movies/1001",
 					"host": [
 						"{{BASE_URL}}"
 					],
 					"path": [
 						"movies",
-						"1"
+						"1001"
 					]
 				}
 			},
@@ -169,22 +169,22 @@
 					"formdata": [
 						{
 							"key": "email",
-							"value": "mail@mail.com",
+							"value": "rober@mail.com",
 							"type": "text"
 						},
 						{
 							"key": "username",
-							"value": "jose",
+							"value": "Rober",
 							"type": "text"
 						},
 						{
 							"key": "password",
-							"value": "comidita_123",
+							"value": "comidita_1234",
 							"type": "text"
 						},
 						{
 							"key": "password2",
-							"value": "comidita_123",
+							"value": "comidita_1234",
 							"type": "text"
 						}
 					]
@@ -223,27 +223,62 @@
 					"formdata": [
 						{
 							"key": "title",
-							"value": "the shinning",
+							"value": "nope",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Aliens ",
 							"type": "text"
 						},
 						{
 							"key": "release_year",
-							"value": "1993",
+							"value": "2022",
 							"type": "text"
 						},
 						{
-							"key": "number_in_stocks",
+							"key": "language",
 							"value": "1",
 							"type": "text"
 						},
 						{
-							"key": "daily_rate",
-							"value": "2.2",
+							"key": "rental_duration",
+							"value": "10",
 							"type": "text"
 						},
 						{
-							"key": "genre",
-							"value": "1",
+							"key": "rental_rate",
+							"value": "12.3",
+							"type": "text"
+						},
+						{
+							"key": "length",
+							"value": "110",
+							"type": "text"
+						},
+						{
+							"key": "replacement_cost",
+							"value": "20.0",
+							"type": "text"
+						},
+						{
+							"key": "rating",
+							"value": "PG",
+							"type": "text"
+						},
+						{
+							"key": "last_update",
+							"value": "2022-05-26T14:50:58.951",
+							"type": "text"
+						},
+						{
+							"key": "special_features",
+							"value": "Deleted Scenes,Behind the Scenes",
+							"type": "text"
+						},
+						{
+							"key": "fulltext",
+							"value": "'academi':1 'battl':15 'canadian':20 'dinosaur':2 'drama':5 'epic':4 'feminist':8 'mad':11 'must':14 'rocki':21 'scientist':12 'teacher':17",
 							"type": "text"
 						}
 					]
@@ -281,39 +316,74 @@
 					"formdata": [
 						{
 							"key": "title",
-							"value": "the shinning 2",
+							"value": "nope2",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Aliens ",
 							"type": "text"
 						},
 						{
 							"key": "release_year",
-							"value": "1992",
+							"value": "2022",
 							"type": "text"
 						},
 						{
-							"key": "number_in_stocks",
-							"value": "2",
+							"key": "language",
+							"value": "1",
 							"type": "text"
 						},
 						{
-							"key": "daily_rate",
-							"value": "2.2",
+							"key": "rental_duration",
+							"value": "10",
 							"type": "text"
 						},
 						{
-							"key": "genre",
-							"value": "3",
+							"key": "rental_rate",
+							"value": "12.3",
+							"type": "text"
+						},
+						{
+							"key": "length",
+							"value": "110",
+							"type": "text"
+						},
+						{
+							"key": "replacement_cost",
+							"value": "20.0",
+							"type": "text"
+						},
+						{
+							"key": "rating",
+							"value": "PG",
+							"type": "text"
+						},
+						{
+							"key": "last_update",
+							"value": "2022-05-26T14:50:58.951",
+							"type": "text"
+						},
+						{
+							"key": "special_features",
+							"value": "Deleted Scenes,Behind the Scenes",
+							"type": "text"
+						},
+						{
+							"key": "fulltext",
+							"value": "'academi':1 'battl':15 'canadian':20 'dinosaur':2 'drama':5 'epic':4 'feminist':8 'mad':11 'must':14 'rocki':21 'scientist':12 'teacher':17",
 							"type": "text"
 						}
 					]
 				},
 				"url": {
-					"raw": "{{BASE_URL}}/movies/6/",
+					"raw": "{{BASE_URL}}/movies/1001/",
 					"host": [
 						"{{BASE_URL}}"
 					],
 					"path": [
 						"movies",
-						"6",
+						"1001",
 						""
 					]
 				}
@@ -339,20 +409,20 @@
 					"mode": "formdata",
 					"formdata": [
 						{
-							"key": "title",
-							"value": "the shinning 3",
+							"key": "rental_rate",
+							"value": "120.90",
 							"type": "text"
 						}
 					]
 				},
 				"url": {
-					"raw": "{{BASE_URL}}/movies/6/",
+					"raw": "{{BASE_URL}}/movies/1001/",
 					"host": [
 						"{{BASE_URL}}"
 					],
 					"path": [
 						"movies",
-						"6",
+						"1001",
 						""
 					]
 				}
@@ -385,14 +455,54 @@
 					]
 				},
 				"url": {
-					"raw": "{{BASE_URL}}/movies/6/",
+					"raw": "{{BASE_URL}}/movies/1001/",
 					"host": [
 						"{{BASE_URL}}"
 					],
 					"path": [
 						"movies",
-						"6",
+						"1001",
 						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/movies/?page=101",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{TOKEN}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/movies/?page=100",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"movies",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "100"
+						}
 					]
 				}
 			},

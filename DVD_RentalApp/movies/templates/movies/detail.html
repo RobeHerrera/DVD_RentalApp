@@ -1,12 +1,56 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <dl>
-        <dt>Title</dt>
-        <dd>{{movie.title}}</dd>
-        <dt>Genre</dt>
-        <dd>{{movie.genre}}</dd>
-        <dt>Stock</dt>
-        <dd>{{movie.number_in_stocks}}<dd>
-    </dl>
+
+<table border="1" align="left" >
+<tr >
+    <td style="padding:10px">Title</td>
+    <td style="padding:10px">{{movie.title}}</td>
+</tr>
+<tr>
+    <td style="padding:10px">Description</td>
+    <td style="padding:10px">{{movie.description}}</td>
+</tr>
+<tr>
+    <td style="padding:10px">Year</td>
+    <td style="padding:10px">{{movie.release_year}}</td>
+</tr>
+<tr>
+    <td style="padding:10px">language</td>
+    <td style="padding:10px">{{movie.language}}</td>
+</tr>
+<tr>
+    <td style="padding:10px">rental_duration</td>
+    <td style="padding:10px">{{movie.rental_duration}}</td>
+</tr>
+<tr>
+    <td style="padding:10px">rental_rate</td>
+    <td style="padding:10px">{{movie.rental_rate}}</td>
+</tr>
+<tr>
+    <td style="padding:10px">length</td>
+    <td style="padding:10px">{{movie.length}}</td>
+</tr>
+<tr>
+    <td style="padding:10px">replacement_cost</td>
+    <td style="padding:10px">{{movie.replacement_cost}}</td>
+</tr>
+<tr>
+    <td style="padding:10px">rating</td>
+    <td style="padding:10px">{{movie.rating}}</td>
+</tr>
+<tr>
+    <td style="padding:10px">last_update</td>
+    <td style="padding:10px">{{movie.last_update}}</td>
+</tr>
+<tr>
+    <td style="padding:10px">special_features</td>
+    <td style="padding:10px">{{movie.special_features}}</td>
+</tr>
+<tr>
+    <td style="padding:10px">fulltext</td>
+    <td style="padding:10px">{{movie.fulltext}}</td>
+</tr>
+</table>
+<br>
 {% endblock  %}
