@@ -88,10 +88,18 @@ Tested on :
 - WSL
 - Windows
 
+### Instructions for Docker (tested on WSL)
+1. Install Docker Engine from the following page instructions: `https://docs.docker.com/engine/install/ubuntu/`
+2. Install Docker Compose `pip install docker-compose`
+3. docker-compose up
+4. go `http://127.0.0.1:8000/` and should be up and running
+
+
 ### TODO:
 - Add Docstrings
 - Add correct SQL db
 - Add Unit Testing
   1. Add test for Authentication 
   2. Add for all end points in the API
-- Add Docker Container
+
+
