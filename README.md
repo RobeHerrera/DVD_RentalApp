@@ -89,7 +89,6 @@ Delete a movie
 http DELETE http://127.0.0.1:8000/api/movies/{movie_id}/ "Authorization: Bearer {YOUR_TOKEN}"
 ```
 
-
 ## Unit test
 - run the command: `python manage.py test`
 
@@ -98,12 +97,10 @@ Tested on :
 - WSL
 - Windows
 
-
 ### TODO:
-- Add Docstrings
-- Add correct SQL db
-- Add Unit Testing
-  1. Add test for Authentication 
-  2. Add for all end points in the API
+1. Add Unit Testing
+  - Add test for Authentication 
+  - Add for all end points in the API
+2. Verification in tables
 
 

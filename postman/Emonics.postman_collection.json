@@ -507,6 +507,297 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "getRentalList",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{TOKEN}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/rental/",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"rental",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getRental",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{TOKEN}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/rental/16050",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"rental",
+						"16050"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createRental",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{TOKEN}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "rental_date",
+							"value": "2022-05-24T22:54:33",
+							"type": "text"
+						},
+						{
+							"key": "inventory",
+							"value": "1525",
+							"type": "text"
+						},
+						{
+							"key": "customer",
+							"value": "459",
+							"type": "text"
+						},
+						{
+							"key": "return_date",
+							"value": "2035-05-28T19:40:33",
+							"type": "text"
+						},
+						{
+							"key": "staff",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "last_update",
+							"value": "2005-05-28T19:40:33",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/rental/",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"rental",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fullUpdateRental",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{TOKEN}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "nope2",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Aliens ",
+							"type": "text"
+						},
+						{
+							"key": "release_year",
+							"value": "2022",
+							"type": "text"
+						},
+						{
+							"key": "language",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "rental_duration",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "rental_rate",
+							"value": "12.3",
+							"type": "text"
+						},
+						{
+							"key": "length",
+							"value": "110",
+							"type": "text"
+						},
+						{
+							"key": "replacement_cost",
+							"value": "20.0",
+							"type": "text"
+						},
+						{
+							"key": "rating",
+							"value": "PG",
+							"type": "text"
+						},
+						{
+							"key": "last_update",
+							"value": "2022-05-26T14:50:58.951",
+							"type": "text"
+						},
+						{
+							"key": "special_features",
+							"value": "Deleted Scenes,Behind the Scenes",
+							"type": "text"
+						},
+						{
+							"key": "fulltext",
+							"value": "'academi':1 'battl':15 'canadian':20 'dinosaur':2 'drama':5 'epic':4 'feminist':8 'mad':11 'must':14 'rocki':21 'scientist':12 'teacher':17",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/movies/1001/",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"movies",
+						"1001",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "partialUpdateRental",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{TOKEN}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "customer",
+							"value": "111",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/rental/1/",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"rental",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteRental",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{TOKEN}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "the shinning 3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/rental/1/",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"rental",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
